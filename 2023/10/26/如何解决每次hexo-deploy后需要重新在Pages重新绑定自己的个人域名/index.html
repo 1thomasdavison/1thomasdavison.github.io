@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名 | Thomas のブログ</title><meta name="author" content="Thomas"><meta name="copyright" content="Thomas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="问题描述每次部署把博客到我的GitHub pages，我都发现原本绑定到Pages的个人域名失效了，需要再次绑定，很麻烦。 问题分析注意到每次绑定个人域名后GitHub会在我的部署文件里加入一个名为CNAME的文件  点开后显示的正是绑定的个人域名。  那问题就好解决了。如果我提前把这个文件配置好，以后应该就能在部署后自动配置我的域名了。 解决方法打开博客文件夹，找到source文件夹，创建一个名">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名 | Thomas のブログ</title><meta name="author" content="Thomas"><meta name="copyright" content="Thomas"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="问题描述每次部署把博客到我的GitHub pages，我都发现原本绑定到Pages的个人域名失效了，需要再次绑定，很麻烦。 问题分析注意到每次绑定个人域名后GitHub会在我的部署文件里加入一个名为CNAME的文件  点开后显示的正是绑定的个人域名。  那问题就好解决了。如果我提前把这个文件配置好，以后应该就能在部署后自动配置我的域名了。 解决方法打开博客文件夹，找到source文件夹，创建一个名">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名">
 <meta property="og:url" content="http://example.com/2023/10/26/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%AF%8F%E6%AC%A1hexo-deploy%E5%90%8E%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0%E5%9C%A8Pages%E9%87%8D%E6%96%B0%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/index.html">
@@ -130,7 +130,7 @@
       win.activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
         }
       }
       const t = saveToLocal.get('theme')
