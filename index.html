@@ -1,270 +1,123 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>张秦恺的博客 - 你好</title><meta name="author" content="张秦恺"><meta name="copyright" content="张秦恺"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta property="og:type" content="website">
-<meta property="og:title" content="张秦恺的博客">
-<meta property="og:url" content="https://1thomasdavison.github.io/index.html">
-<meta property="og:site_name" content="张秦恺的博客">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://1thomasdavison.github.io/img/a.jpg">
-<meta property="article:author" content="张秦恺">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://1thomasdavison.github.io/img/a.jpg"><link rel="shortcut icon" href="/img/ico4.jpg"><link rel="canonical" href="https://1thomasdavison.github.io/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
-  root: '/',
-  algolia: undefined,
-  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
-  translate: undefined,
-  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: true,
-    post: true
-  },
-  runtime: '',
-  dateSuffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  infinitegrid: {
-    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
-    buttonText: '加载更多'
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isAnchor: false,
-  percent: {
-    toc: true,
-    rightside: false,
-  },
-  autoDarkmode: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '张秦恺的博客',
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2025-09-09 16:14:15'
-}</script><script>(win=>{
-      win.saveToLocal = {
-        set: (key, value, ttl) => {
-          if (ttl === 0) return
-          const now = Date.now()
-          const expiry = now + ttl * 86400000
-          const item = {
-            value,
-            expiry
-          }
-          localStorage.setItem(key, JSON.stringify(item))
-        },
-      
-        get: key => {
-          const itemStr = localStorage.getItem(key)
-      
-          if (!itemStr) {
-            return undefined
-          }
-          const item = JSON.parse(itemStr)
-          const now = Date.now()
-      
-          if (now > item.expiry) {
-            localStorage.removeItem(key)
-            return undefined
-          }
-          return item.value
-        }
-      }
-    
-      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.src = url
-        script.async = true
-        script.onerror = reject
-        script.onload = script.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          script.onload = script.onreadystatechange = null
-          resolve()
-        }
-
-        Object.keys(attr).forEach(key => {
-          script.setAttribute(key, attr[key])
-        })
-
-        document.head.appendChild(script)
-      })
-    
-      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = url
-        if (id) link.id = id
-        link.onerror = reject
-        link.onload = link.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          link.onload = link.onreadystatechange = null
-          resolve()
-        }
-        document.head.appendChild(link)
-      })
-    
-      win.activateDarkMode = () => {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = () => {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-        if (t === 'dark') activateDarkMode()
-        else if (t === 'light') activateLightMode()
-      
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-      const detectApple = () => {
-        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-          document.documentElement.classList.add('apple')
-        }
-      }
-      detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/custom.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><script>const preloader = {
-  endLoading: () => {
-    document.body.style.overflow = 'auto';
-    document.getElementById('loading-box').classList.add("loaded")
-  },
-  initLoading: () => {
-    document.body.style.overflow = '';
-    document.getElementById('loading-box').classList.remove("loaded")
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qinkai Zhang</title>
+<meta name="description" content="Qinkai Zhang, Ph.D. student at Harbin Institute of Technology (HIT-SCIR).">
+<style>
+  /* 只含「张秦恺」三个字的思源宋体子集（Noto Serif CJK SC, SIL OFL） */
+  @font-face {
+    font-family: "NameCN";
+    src: url(data:font/woff2;base64,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) format("woff2");
   }
-}
-window.addEventListener('load',()=> { preloader.endLoading() })
+  body {
+    margin: 0;
+    background: #fff;
+    color: #222;
+    font: 17px/1.6 Georgia, "Times New Roman", "Songti SC", "SimSun", serif;
+  }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 56px 20px 40px; }
+  a { color: #1a0dab; text-decoration: none; }
+  a:hover { text-decoration: underline; }
 
-if (false) {
-  document.addEventListener('pjax:send', () => { preloader.initLoading() })
-  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
-}</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/a.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/default.jpeg')"><nav id="nav"><span id="blog-info"><a href="/" title="张秦恺的博客"><span class="site-name">张秦恺的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">张秦恺的博客</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/1thomasdavison" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:qkzhang@ir.hit.edu.cn" target="_blank" title="email"><i class="fa-regular fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2023/10/31/20%E5%B2%81/" title="20岁生日感想🎂"><img class="post-bg" src="/img/cover/cover2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="20岁生日感想🎂"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/31/20%E5%B2%81/" title="20岁生日感想🎂">20岁生日感想🎂</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-31T03:36:14.000Z" title="发表于 2023-10-31 11:36:14">2023-10-31</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-09-09T07:54:27.509Z" title="更新于 2025-09-09 15:54:27">2025-09-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2023/10/31/20%E5%B2%81/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">小时候总觉得长大真好，再也不会被别人管着了，能够打游戏打到疲倦，泡面吃到吐，能去很远得地方，见到不同的人，成年人的世界异彩纷呈，幼年的我为之神往，但是到了20岁的此刻，我却感受到莫名的怅然若失。
-小时候的我觉得，20岁的我应该是个独当一面、顶天立地的男子汉了。如今站在时间的十字路口回望儿时的期盼，我不禁反思自己是否真的有能力独当一面。若是谈物质层面，找份工作养活自己不成问题，况且我的父母能支持我正常的学习和生活开销，让我不必为此烦恼，能够专心学习充实自己。
-可我也清晰地认识到，我的阅历尚浅，很多想法还不成熟，许多行为也很幼稚。在一些国家，二十岁的男人可能已经是一两个孩子的父亲了，可是我却时不时感受到年龄增长时精神世界却没有得到相应地成长的无力，我依旧懦弱、自卑、想要逃避，就如同十年前的那个小孩一样——我没做好“独当一面”的准备。
-在我18岁生日那天，意识到自己终于长大成人时，应该是一件值得欣喜的事，我心里的情绪却有点复杂。如今年及弱冠，再次体味到这种情绪，我终于明白了：上天将属于我的自由赋予给我，让我能够自己主宰自己命运的同时，也把相应的责任放在了我手里——这是我自己的人生，不会被任何 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/10/28/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB--Imagine/" title="音乐分享--Imagine"><img class="post-bg" src="/img/cover/cover6.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="音乐分享--Imagine"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/28/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB--Imagine/" title="音乐分享--Imagine">音乐分享--Imagine</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-28T03:26:05.000Z" title="发表于 2023-10-28 11:26:05">2023-10-28</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-28T07:35:05.000Z" title="更新于 2023-10-28 15:35:05">2023-10-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9F%B3%E4%B9%90/">音乐</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%8A%AB%E5%A4%B4%E5%A3%AB/">披头士</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2023/10/28/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB--Imagine/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">BMI将它列为20世纪中，演唱最多的100首歌曲之一。它最后赢得格莱美名人堂奖，并被列入摇滚名人堂500首定型摇滚音乐的歌曲。《吉尼斯世界纪录英国单曲》一书进行的调查中，人们将它评选为有史以来排名第二的单曲，《滚石》杂志将它列在“有史以来500首最伟大的歌曲”第三位。[1]
-它就是英国歌唱家约翰·列侬（John Lennon）创作并演奏的歌曲《Imagine》，宣传Love and Peace的国际奥委会保留曲目。
+  h1 { font-size: 30px; font-weight: normal; margin: 0 0 6px; }
+  h1 .cn { font-family: "NameCN", serif; font-size: 20px; color: #555; margin-left: 6px; }
+  h2 {
+    font-size: 21px;
+    font-weight: normal;
+    margin: 36px 0 12px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ddd;
+  }
+  p { margin: 0 0 12px; }
+  .info { margin: 0; }
+  .contact { margin-top: 8px; }
 
+  ul { margin: 0; padding-left: 22px; }
+  li { margin-bottom: 6px; }
 
-谁是约翰·列侬？他是英国男歌手、音乐家、诗人、社会活动家，摇滚乐队“披头士”的成员。[2]
-
-
-
-
-约翰·列侬出生于1940年10月9日，他的父母在他五岁那年抛弃了他，与第一任妻子辛西娅离婚时，他们的儿子朱利安刚好五岁。1980年12月8日晚上10点49分，约翰·列侬在纽约自己的寓所前被一名据称患有精神病的美国狂热男性歌迷马克·查普曼枪杀，年仅40岁。此时约翰·列侬与小野洋子的儿子西恩刚好也是五岁。[3]
-1955年，在艺术学校读书的约翰·列侬组建了一支名为“the Quarrymen”（采石工人）的摇滚乐队，这支乐队是The Beatles的前身。1960年8月中旬， ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2023/10/27/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E8%AF%AD%E6%B3%95/" title="搜索引擎语法"><img class="post-bg" src="/img/cover/cover10.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搜索引擎语法"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/27/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E8%AF%AD%E6%B3%95/" title="搜索引擎语法">搜索引擎语法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-27T03:30:32.000Z" title="发表于 2023-10-27 11:30:32">2023-10-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-09-09T08:01:28.246Z" title="更新于 2025-09-09 16:01:28">2025-09-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E8%B0%B7%E6%AD%8C/">谷歌</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2023/10/27/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E8%AF%AD%E6%B3%95/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">提醒：以下用到的符号都要在英文状态下打出
-25年编辑：感觉现在都不用学搜索引擎语法了，llm就是智能搜索引擎
-用 “” 限定关键词如果想要限定搜索内容，使用&quot;&quot;。
-例如：想要搜索易阳千喜这个关键词时，使用&quot;易阳千喜&quot; 来限定，避免搜索到的都是四字哥哥。
-用 ctrl+F 在页面里快速搜索在页面里使用ctrl+F搜索关键词能帮助你快速定位到相应位置。
-用 intitle： 来限定标题关键词例如：用intitle:iPhone摄像头进灰 让文章标题包含这几个关键词。
-你可以用intitle:&quot;iPhone摄像头进灰&quot; 来让你的关键词完整出现在你搜索的文章标题里。
-用 allintitle: 让所有关键词出现在标题里用法：allintitle:关键词1 关键词2 关键词3...
-这样，所有的关键词都会出现在标题里。
-用 intext: 限定文章内容关键词用法：intext:关键词1 关键词2...
-用 inurl: 限定网址关键词例如：用 李子柒 inurl:cctv intext:Youtube 搜索cctv关于李子柒的报道，并限 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2023/10/26/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%AF%8F%E6%AC%A1hexo-deploy%E5%90%8E%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0%E5%9C%A8Pages%E9%87%8D%E6%96%B0%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/" title="如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名"><img class="post-bg" src="/img/cover/cover3.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名"></a></div><div class="recent-post-info"><a class="article-title" href="/2023/10/26/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%AF%8F%E6%AC%A1hexo-deploy%E5%90%8E%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0%E5%9C%A8Pages%E9%87%8D%E6%96%B0%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/" title="如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名">如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-10-26T05:25:54.000Z" title="发表于 2023-10-26 13:25:54">2023-10-26</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-10-26T13:22:35.000Z" title="更新于 2023-10-26 21:22:35">2023-10-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/hexo/">hexo</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a class="twikoo-count" href="/2023/10/26/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%AF%8F%E6%AC%A1hexo-deploy%E5%90%8E%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0%E5%9C%A8Pages%E9%87%8D%E6%96%B0%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/#post-comment"><i class="fa-solid fa-spinner fa-spin"></i></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">问题描述每次部署把博客到我的GitHub pages，我都发现原本绑定到Pages的个人域名失效了，需要再次绑定，很麻烦。
-问题分析注意到每次绑定个人域名后GitHub会在我的部署文件里加入一个名为CNAME的文件
-
-点开后显示的正是绑定的个人域名。
-
-那问题就好解决了。如果我提前把这个文件配置好，以后应该就能在部署后自动配置我的域名了。
-解决方法打开博客文件夹，找到source文件夹，创建一个名为 CNAME 的文件，要注意这个文件没有后缀。
-（下面的CNAME.CNAME就是反例，没有后缀哟）
-这下问题就解决啦。
-</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/a.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">张秦恺</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/1thomasdavison" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:qkzhang@ir.hit.edu.cn" target="_blank" title="email"><i class="fa-regular fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/10/31/20%E5%B2%81/" title="20岁生日感想🎂"><img src="/img/cover/cover2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="20岁生日感想🎂"/></a><div class="content"><a class="title" href="/2023/10/31/20%E5%B2%81/" title="20岁生日感想🎂">20岁生日感想🎂</a><time datetime="2023-10-31T03:36:14.000Z" title="发表于 2023-10-31 11:36:14">2023-10-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/28/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB--Imagine/" title="音乐分享--Imagine"><img src="/img/cover/cover6.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="音乐分享--Imagine"/></a><div class="content"><a class="title" href="/2023/10/28/%E9%9F%B3%E4%B9%90%E5%88%86%E4%BA%AB--Imagine/" title="音乐分享--Imagine">音乐分享--Imagine</a><time datetime="2023-10-28T03:26:05.000Z" title="发表于 2023-10-28 11:26:05">2023-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/27/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E8%AF%AD%E6%B3%95/" title="搜索引擎语法"><img src="/img/cover/cover10.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="搜索引擎语法"/></a><div class="content"><a class="title" href="/2023/10/27/%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E8%AF%AD%E6%B3%95/" title="搜索引擎语法">搜索引擎语法</a><time datetime="2023-10-27T03:30:32.000Z" title="发表于 2023-10-27 11:30:32">2023-10-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023/10/26/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%AF%8F%E6%AC%A1hexo-deploy%E5%90%8E%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0%E5%9C%A8Pages%E9%87%8D%E6%96%B0%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/" title="如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名"><img src="/img/cover/cover3.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名"/></a><div class="content"><a class="title" href="/2023/10/26/%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3%E6%AF%8F%E6%AC%A1hexo-deploy%E5%90%8E%E9%9C%80%E8%A6%81%E9%87%8D%E6%96%B0%E5%9C%A8Pages%E9%87%8D%E6%96%B0%E7%BB%91%E5%AE%9A%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/" title="如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名">如何解决每次hexo deploy后需要重新在Pages重新绑定自己的个人域名</a><time datetime="2023-10-26T05:25:54.000Z" title="发表于 2023-10-26 13:25:54">2023-10-26</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
-            <i class="fas fa-folder-open"></i>
-            <span>分类</span>
-            
-            </div>
-            <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%8A%80%E6%9C%AF/"><span class="card-category-list-name">技术</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9D%82%E8%B0%88/"><span class="card-category-list-name">杂谈</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9F%B3%E4%B9%90/"><span class="card-category-list-name">音乐</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E8%B0%B7%E6%AD%8C/" style="font-size: 1.1em; color: #999">谷歌</a> <a href="/tags/%E6%8A%AB%E5%A4%B4%E5%A3%AB/" style="font-size: 1.1em; color: #999">披头士</a> <a href="/tags/hexo/" style="font-size: 1.1em; color: #999">hexo</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">4</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">2.4k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-09-09T08:14:14.908Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2025 By 张秦恺</div></div><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">一句歌词🎵</p><div class="bg-ad"><div>If it doesn't feel like home, you can do what I do, just pretend you don't feel so alone.</div><div class="btn-xz-box"><a class="btn-xz">Feel Like Home - Fort Minor</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"></ul></div></div></div><div class="ft-item-2"><p class="ft-t">推荐友链⌛</p><div class="ft-img-group"></div></div></div><div class="copyright"><span><b>&copy;2023 - 2025</b></span><span><b>&nbsp;&nbsp;By 张秦恺</b></span></div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src="https://sourcebucket.s3.ladydaily.com/badge/Frame-Hexo-blue.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1"><img src="https://sourcebucket.s3.ladydaily.com/badge/Theme-Butterfly-6513df.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src=" https://sourcebucket.s3.ladydaily.com/badge/Source-Github-d021d6.svg" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => { 
-  const getCommentUrl = () => {
-    const eleGroup = document.querySelectorAll('#recent-posts .article-title')
-    let urlArray = []
-    eleGroup.forEach(i=>{
-      urlArray.push(i.getAttribute('href'))
-    })
-    return urlArray
+  .paper { margin-bottom: 18px; }
+  .paper .title { font-weight: bold; }
+  .paper .links { margin-top: 2px; }
+  pre.bibtex {
+    display: none;
+    margin: 8px 0 0;
+    padding: 10px 12px;
+    background: #f6f6f6;
+    border: 1px solid #e5e5e5;
+    font: 13px/1.5 Menlo, Consolas, monospace;
+    overflow-x: auto;
   }
 
-  const getCount = () => {
-    const runTwikoo = () => {
-      twikoo.getCommentsCount({
-        envId: '',
-        region: '',
-        urls: getCommentUrl(),
-        includeReply: false
-      }).then(function (res) {
-        document.querySelectorAll('#recent-posts .twikoo-count').forEach((item,index) => {
-          item.textContent = res[index].count
-        })
-      }).catch(function (err) {
-        console.log(err)
-      })
-    }
+  .entry { display: flex; justify-content: space-between; gap: 16px; }
+  .entry .date { flex: none; color: #555; }
+  .item { margin-bottom: 12px; }
 
-      if (typeof twikoo === 'object') {
-        runTwikoo()
-      } else {
-        getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runTwikoo)
-      }
-  }
+  footer { margin-top: 48px; color: #888; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-  window.pjax ? getCount() : window.addEventListener('load', getCount)
+  <h1>Qinkai Zhang <span class="cn">张秦恺</span></h1>
+  <p class="info">Ph.D. Student, Harbin Institute of Technology</p>
+  <p class="info contact">
+    Email: qkzhang [at] ir.hit.edu.cn
+    &nbsp;/&nbsp; <a href="https://github.com/1thomasdavison">GitHub</a>
+    <!-- &nbsp;/&nbsp; <a href="https://scholar.google.com/citations?user=XXXXXXX">Google Scholar</a> -->
+  </p>
 
-})()</script><script>window.typedJSFn = {
-  init: (str) => {
-    window.typed = new Typed('#subtitle', Object.assign({
-      strings: str,
-      startDelay: 300,
-      typeSpeed: 150,
-      loop: true,
-      backSpeed: 50,
-    }, null))
-  },
-  run: (subtitleType) => {
-    if (true) {
-      if (typeof Typed === 'function') {
-        subtitleType()
-      } else {
-        getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
-      }
-    } else {
-      subtitleType()
-    }
-  }
-}
-</script><script>function subtitleType () {
-  if (true) {
-    typedJSFn.init(["你好,我是张秦恺","Welcome to my blog"])
-  } else {
-    document.getElementById("subtitle").textContent = "你好,我是张秦恺"
-  }
-}
-typedJSFn.run(subtitleType)</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
+  <h2>About</h2>
+  <p>
+    I am a first-year Ph.D. student at the Research Center for Social Computing and Interactive Robotics
+    (<a href="http://ir.hit.edu.cn/">HIT-SCIR</a>), Harbin Institute of Technology.
+  </p>
+  <p>
+    My research interests include personalization, LLM agents, and recursive self-improvement (RSI).
+  </p>
+
+  <h2>News</h2>
+  <ul>
+    <li>[2026.09] Started my Ph.D. at HIT-SCIR.</li>
+    <li>[2026.06] Our paper <a href="https://arxiv.org/abs/2606.26654">SocialPersona</a> is now on arXiv.</li>
+  </ul>
+
+  <h2>Publications</h2>
+  <div class="paper">
+    <div class="title">SocialPersona: Benchmarking Personalized Profiling and Response with Multimodal Social-Media Context</div>
+    <div><b>Qinkai Zhang</b>, Yanyan Zhao, Xin Lu, Yulin Hu, Pengtao Han, Bing Qin</div>
+    <div><i>arXiv preprint arXiv:2606.26654</i>, 2026</div>
+    <div class="links">
+      [<a href="https://arxiv.org/pdf/2606.26654">PDF</a>]
+      [<a href="https://arxiv.org/abs/2606.26654">arXiv</a>]
+      [<a href="#" onclick="var b=document.getElementById('bib1');b.style.display=b.style.display==='block'?'none':'block';return false;">BibTeX</a>]
+    </div>
+<pre class="bibtex" id="bib1">@article{zhang2026socialpersona,
+  title   = {SocialPersona: Benchmarking Personalized Profiling and Response with Multimodal Social-Media Context},
+  author  = {Zhang, Qinkai and Zhao, Yanyan and Lu, Xin and Hu, Yulin and Han, Pengtao and Qin, Bing},
+  journal = {arXiv preprint arXiv:2606.26654},
+  year    = {2026}
+}</pre>
+  </div>
+
+  <h2>Education</h2>
+  <div class="item">
+    <div class="entry"><span><b>Harbin Institute of Technology</b></span><span class="date">2026 &ndash; Present</span></div>
+    <div>Ph.D. Student, HIT-SCIR</div>
+  </div>
+  <div class="item">
+    <div class="entry"><span><b>Harbin Institute of Technology</b></span><span class="date">2022 &ndash; 2026</span></div>
+    <div>B.Eng. in Computer Science and Technology</div>
+  </div>
+
+  <h2>Experience</h2>
+  <div class="item">
+    <div class="entry"><span><b>Huawei Beijing Research Center</b></span><span class="date">Jun 2026 &ndash; Sep 2026</span></div>
+    <div>Research Intern. Worked on synthesizing high-quality dialogue data.</div>
+  </div>
+
+  <footer>Last updated: Oct 2026</footer>
+</div>
+</body>
+</html>
